@@ -1,10 +1,11 @@
-'use strict'
+import dotenv from 'dotenv'
+import ReadlinePromise from 'readline-promise'
+import argsFromEnv from './args_from_env.js'
+import debugTableUtil from './debug_table.js'
+import { get } from './debug.js'
 
-const dotenv = require('dotenv')
-const Readline = require('readline-promise').default
-const argsFromEnv = require('./args_from_env')
-const debugTableUtil = require('./debug_table')
-const D = require('./debug').get()
+const Readline = ReadlinePromise.default || ReadlinePromise
+const D = get()
 const debug = D('>')
 debug.enabled = true
 
@@ -29,17 +30,11 @@ const debugTable = ({ rows = [], headers, widths }, extraRows = []) => {
   })
   debug('')
 }
-module.exports = {
-  get args () {
-    return argsFromEnv()
-  },
-  debug,
-  debugTable,
-  get readline () {
-    return Readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
-      terminal: false
-    })
-  }
-}
+
+export const args = argsFromEnv()
+export { debug, debugTable }
+export const readline = Readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+  terminal: false
+})

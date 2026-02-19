@@ -1,7 +1,7 @@
-'use strict'
+import { RESTv2 } from '../../index.js'
+import { args, debug, debugTable } from '../util/setup.js'
 
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, debugTable } = require('../util/setup')
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const rest = new RESTv2({

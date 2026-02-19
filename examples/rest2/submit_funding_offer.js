@@ -1,8 +1,9 @@
-'use strict'
+import _bfxModels from 'bfx-api-node-models'
+import { RESTv2 } from '../../index.js'
+import { args, debug } from '../util/setup.js'
 
-const { FundingOffer } = require('bfx-api-node-models')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug } = require('../util/setup')
+const { FundingOffer } = _bfxModels
+const { apiKey, apiSecret } = args
 
 const CLOSE_DELAY_MS = 5 * 1000
 

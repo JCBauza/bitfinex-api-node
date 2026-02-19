@@ -1,7 +1,5 @@
-'use strict'
-
-const { debug } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+import { debug } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
 async function execute () {
   const ws = new WSv2({

@@ -1,8 +1,9 @@
-'use strict'
+import _bfxModels from 'bfx-api-node-models'
+import { args, debug } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
-const { Order } = require('bfx-api-node-models')
-const { args: { apiKey, apiSecret }, debug } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+const { Order } = _bfxModels
+const { apiKey, apiSecret } = args
 
 const oA = new Order({
   symbol: 'tBTCUSD',

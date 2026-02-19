@@ -1,9 +1,9 @@
-'use strict'
+import _isArray from 'lodash/isArray.js'
+import _isFinite from 'lodash/isFinite.js'
+import { args, debug } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
-const _isArray = require('lodash/isArray')
-const _isFinite = require('lodash/isFinite')
-const { args: { apiKey, apiSecret }, debug } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const ws = new WSv2({

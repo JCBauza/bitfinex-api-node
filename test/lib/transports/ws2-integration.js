@@ -1,10 +1,11 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const WSv2 = require('../../../lib/transports/ws2')
-const { Order } = require('bfx-api-node-models')
-const { MockWSv2Server } = require('bfx-api-mock-srv')
+import assert from 'node:assert'
+import WSv2 from '../../../lib/transports/ws2.js'
+import _bfxModels from 'bfx-api-node-models'
+import _bfxMockSrv from 'bfx-api-mock-srv'
+const { Order } = _bfxModels
+const { MockWSv2Server } = _bfxMockSrv
 
 const API_KEY = 'dummy'
 const API_SECRET = 'dummy'

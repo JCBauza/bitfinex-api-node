@@ -1,9 +1,10 @@
-'use strict'
+import _bfxUtil from 'bfx-api-node-util'
+import _isEmpty from 'lodash/isEmpty.js'
+import { RESTv2 } from '../../index.js'
+import { args, debug, debugTable } from '../util/setup.js'
 
-const { prepareAmount, preparePrice } = require('bfx-api-node-util')
-const _isEmpty = require('lodash/isEmpty')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, debugTable } = require('../util/setup')
+const { prepareAmount, preparePrice } = _bfxUtil
+const { apiKey, apiSecret } = args
 
 const START = Date.now() - (30 * 24 * 60 * 60 * 1000 * 1000)
 const END = Date.now()

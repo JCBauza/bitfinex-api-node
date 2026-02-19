@@ -1,8 +1,7 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const { RESTv2 } = require('../../index')
+import assert from 'node:assert'
+import { RESTv2 } from '../../index.js'
 
 /**
  * REST v2 Integration Tests

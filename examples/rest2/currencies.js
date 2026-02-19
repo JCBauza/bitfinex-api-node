@@ -1,8 +1,6 @@
-'use strict'
-
-const _chunk = require('lodash/chunk')
-const { RESTv2 } = require('../../index')
-const { debug } = require('../util/setup')
+import _chunk from 'lodash/chunk.js'
+import { RESTv2 } from '../../index.js'
+import { debug } from '../util/setup.js'
 
 async function execute () {
   const rest = new RESTv2()

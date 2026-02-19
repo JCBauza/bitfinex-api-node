@@ -1,9 +1,8 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
+import assert from 'node:assert'
 
-const { isSnapshot } = require('../../../lib/util')
+import { isSnapshot } from '../../../lib/util/index.js'
 
 describe('isSnapshot - detects snapshots by data structure', () => {
   it('returns false for heartbeats', () => {

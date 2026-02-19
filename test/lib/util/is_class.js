@@ -1,9 +1,10 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const { TradingTicker } = require('bfx-api-node-models')
-const { isClass } = require('../../../lib/util')
+import assert from 'node:assert'
+import _bfxModels from 'bfx-api-node-models'
+import { isClass } from '../../../lib/util/index.js'
+
+const { TradingTicker } = _bfxModels
 
 describe('isClass', () => {
   it('returns true for classes', () => {

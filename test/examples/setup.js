@@ -1,11 +1,10 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const _isObject = require('lodash/isObject')
-const _isFunction = require('lodash/isFunction')
+import assert from 'node:assert'
+import _isObject from 'lodash/isObject.js'
+import _isFunction from 'lodash/isFunction.js'
 
-const { args, debug, debugTable, readline } = require('../../examples/util/setup')
+import { args, debug, debugTable, readline } from '../../examples/util/setup.js'
 
 describe('setup', () => {
   it('provides a debugger', () => {

@@ -1,5 +1,3 @@
-'use strict'
-
 // Proxy to allow external stubbing
-const debug = require('debug')
-module.exports = { get: () => debug }
+import debug from 'debug'
+export const get = () => debug

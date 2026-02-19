@@ -1,11 +1,11 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const _isObject = require('lodash/isObject')
-const _isArray = require('lodash/isArray')
-const WS2Manager = require('../../lib/ws2_manager')
-const WSv2 = require('../../lib/transports/ws2')
+import assert from 'node:assert'
+import { EventEmitter } from 'events'
+import _isObject from 'lodash/isObject.js'
+import _isArray from 'lodash/isArray.js'
+import WS2Manager from '../../lib/ws2_manager.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
 describe('WS2Manager', () => {
   let m
@@ -636,7 +636,6 @@ describe('WS2Manager', () => {
   describe('socket close cleanup', () => {
     it('clears pending operations on socket close', () => {
       m = new WS2Manager()
-      const { EventEmitter } = require('events')
 
       // Use a simple EventEmitter to avoid real WebSocket connections
       const fakeWs = new EventEmitter()
@@ -668,7 +667,6 @@ describe('WS2Manager', () => {
 
     it('removes socket from pool on close', () => {
       m = new WS2Manager()
-      const { EventEmitter } = require('events')
 
       const fakeWs = new EventEmitter()
       const wsState = {

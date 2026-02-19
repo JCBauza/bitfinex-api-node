@@ -1,7 +1,5 @@
-'use strict'
-
-const { RESTv2 } = require('../../index')
-const { debug, debugTable } = require('../util/setup')
+import { RESTv2 } from '../../index.js'
+import { debug, debugTable } from '../util/setup.js'
 
 async function execute () {
   const rest = new RESTv2({

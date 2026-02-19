@@ -1,8 +1,8 @@
-'use strict'
+import _isEmpty from 'lodash/isEmpty.js'
+import { args, debug, readline } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
-const _isEmpty = require('lodash/isEmpty')
-const { args: { apiKey, apiSecret }, debug, readline } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const ws = new WSv2({

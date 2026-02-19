@@ -1,22 +1,24 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const { SocksProxyAgent } = require('socks-proxy-agent')
-const { MockWSv2Server } = require('bfx-api-mock-srv')
-const _isFunction = require('lodash/isFunction')
-const _isObject = require('lodash/isObject')
-const _isString = require('lodash/isString')
-const _isEmpty = require('lodash/isEmpty')
-const _isError = require('lodash/isError')
-const _includes = require('lodash/includes')
+import assert from 'node:assert'
+import { SocksProxyAgent } from 'socks-proxy-agent'
+import _bfxMockSrv from 'bfx-api-mock-srv'
+import _isFunction from 'lodash/isFunction.js'
+import _isObject from 'lodash/isObject.js'
+import _isString from 'lodash/isString.js'
+import _isEmpty from 'lodash/isEmpty.js'
+import _isError from 'lodash/isError.js'
+import _includes from 'lodash/includes.js'
+import _bfxModels from 'bfx-api-node-models'
+
+import WSv2 from '../../../lib/transports/ws2.js'
+
+const { MockWSv2Server } = _bfxMockSrv
 const {
   Position, FundingOffer, FundingCredit, FundingLoan, Wallet, BalanceInfo,
   MarginInfo, FundingInfo, FundingTrade, Notification, Candle, PublicTrade,
   Trade, TradingTicker, FundingTicker
-} = require('bfx-api-node-models')
-
-const WSv2 = require('../../../lib/transports/ws2')
+} = _bfxModels
 
 const API_KEY = 'dummy'
 const API_SECRET = 'dummy'

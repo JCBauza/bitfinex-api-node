@@ -1,9 +1,7 @@
-'use strict'
-
-const { RESTv1, RESTv2 } = require('bfx-api-node-rest')
-const WSv1 = require('bfx-api-node-ws1')
-const WSv2 = require('./lib/transports/ws2')
-const WS2Manager = require('./lib/ws2_manager')
+import { RESTv1, RESTv2 } from '@jcbit/bfx-api-node-rest'
+import WSv1 from 'bfx-api-node-ws1'
+import WSv2 from './lib/transports/ws2.js'
+import WS2Manager from './lib/ws2_manager.js'
 
 /**
  * Generate a deterministic cache key from an object by sorting keys.
@@ -133,9 +131,11 @@ class BFX {
   }
 }
 
-module.exports = BFX
-module.exports.RESTv1 = RESTv1
-module.exports.RESTv2 = RESTv2
-module.exports.WSv1 = WSv1
-module.exports.WSv2 = WSv2
-module.exports.WS2Manager = WS2Manager
+BFX.RESTv1 = RESTv1
+BFX.RESTv2 = RESTv2
+BFX.WSv1 = WSv1
+BFX.WSv2 = WSv2
+BFX.WS2Manager = WS2Manager
+
+export default BFX
+export { RESTv1, RESTv2, WSv1, WSv2, WS2Manager }

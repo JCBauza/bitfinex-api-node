@@ -1,13 +1,12 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const _isUndefined = require('lodash/isUndefined')
-const _isObject = require('lodash/isObject')
-const _isString = require('lodash/isString')
-const _isEmpty = require('lodash/isEmpty')
-const { SocksProxyAgent } = require('socks-proxy-agent')
-const argsFromEnv = require('../../examples/util/args_from_env')
+import assert from 'node:assert'
+import _isUndefined from 'lodash/isUndefined.js'
+import _isObject from 'lodash/isObject.js'
+import _isString from 'lodash/isString.js'
+import _isEmpty from 'lodash/isEmpty.js'
+import { SocksProxyAgent } from 'socks-proxy-agent'
+import argsFromEnv from '../../examples/util/args_from_env.js'
 
 describe('argsFromEnv', () => {
   it('pulls api credentials from the environment only if available', () => {

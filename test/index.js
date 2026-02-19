@@ -1,11 +1,10 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const BFX = require('../index')
-const { RESTv1, RESTv2 } = require('bfx-api-node-rest')
-const WSv1 = require('bfx-api-node-ws1')
-const WSv2 = require('../lib/transports/ws2')
+import assert from 'node:assert'
+import BFX from '../index.js'
+import { RESTv1, RESTv2 } from '@jcbit/bfx-api-node-rest'
+import WSv1 from 'bfx-api-node-ws1'
+import WSv2 from '../lib/transports/ws2.js'
 
 describe('BFX', () => {
   it('should be loaded', () => {

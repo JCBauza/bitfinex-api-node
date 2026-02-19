@@ -1,12 +1,12 @@
-'use strict'
+import blessed from 'blessed'
+import blessedContrib from 'blessed-contrib'
+import _isEmpty from 'lodash/isEmpty.js'
+import _reverse from 'lodash/reverse.js'
+import _bfxUtil from 'bfx-api-node-util'
+import { debug } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
-const blessed = require('blessed')
-const blessedContrib = require('blessed-contrib')
-const _isEmpty = require('lodash/isEmpty')
-const _reverse = require('lodash/reverse')
-const { preparePrice, prepareAmount } = require('bfx-api-node-util')
-const { debug } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+const { preparePrice, prepareAmount } = _bfxUtil
 
 async function execute () {
   const ws = new WSv2({

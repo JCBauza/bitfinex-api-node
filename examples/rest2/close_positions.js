@@ -1,10 +1,10 @@
-'use strict'
+import PI from 'p-iteration'
+import _isEmpty from 'lodash/isEmpty.js'
+import WSv2 from '../../lib/transports/ws2.js'
+import { RESTv2 } from '../../index.js'
+import { args, debug, debugTable, readline } from '../util/setup.js'
 
-const PI = require('p-iteration')
-const _isEmpty = require('lodash/isEmpty')
-const WSv2 = require('../../lib/transports/ws2')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, debugTable, readline } = require('../util/setup')
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const ws = new WSv2({

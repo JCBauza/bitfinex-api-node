@@ -1,7 +1,7 @@
-'use strict'
+import { args, debug } from '../util/setup.js'
+import WSv2 from '../../lib/transports/ws2.js'
 
-const { args: { apiKey, apiSecret }, debug } = require('../util/setup')
-const WSv2 = require('../../lib/transports/ws2')
+const { apiKey, apiSecret } = args
 const symbol = 'fUSD'
 
 async function execute () {

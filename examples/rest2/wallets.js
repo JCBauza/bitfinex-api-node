@@ -1,12 +1,13 @@
-'use strict'
+import _uniq from 'lodash/uniq.js'
+import _capitalize from 'lodash/capitalize.js'
+import _isFinite from 'lodash/isFinite.js'
+import _isEmpty from 'lodash/isEmpty.js'
+import _bfxUtil from 'bfx-api-node-util'
+import { RESTv2 } from '../../index.js'
+import { args, debug, debugTable } from '../util/setup.js'
 
-const _uniq = require('lodash/uniq')
-const _capitalize = require('lodash/capitalize')
-const _isFinite = require('lodash/isFinite')
-const _isEmpty = require('lodash/isEmpty')
-const { prepareAmount } = require('bfx-api-node-util')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, debugTable } = require('../util/setup')
+const { prepareAmount } = _bfxUtil
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const rest = new RESTv2({

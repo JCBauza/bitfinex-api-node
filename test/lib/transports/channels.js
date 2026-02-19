@@ -1,10 +1,8 @@
 /* eslint-env mocha */
 
-'use strict'
+import assert from 'node:assert'
 
-const assert = require('assert')
-
-const WSv2 = require('../../../lib/transports/ws2')
+import WSv2 from '../../../lib/transports/ws2.js'
 
 const API_KEY = 'dummy'
 const API_SECRET = 'dummy'

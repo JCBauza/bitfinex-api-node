@@ -1,9 +1,10 @@
-'use strict'
+import _bfxUtil from 'bfx-api-node-util'
+import { RESTv2 } from '../../index.js'
+import { args, debug, debugTable } from '../util/setup.js'
+import argFromCLI from '../util/arg_from_cli.js'
 
-const { prepareAmount } = require('bfx-api-node-util')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, debugTable } = require('../util/setup')
-const argFromCLI = require('../util/arg_from_cli')
+const { prepareAmount } = _bfxUtil
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const rest = new RESTv2({

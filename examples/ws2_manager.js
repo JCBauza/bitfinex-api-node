@@ -1,11 +1,9 @@
-'use strict'
+import _flatten from 'lodash/flatten.js'
+import { RESTv2 } from '../../index.js'
+import { args, debug } from './util/setup.js'
+import Manager from '../lib/ws2_manager.js'
 
-process.env.DEBUG = 'bfx:examples:*'
-
-const _flatten = require('lodash/flatten')
-const { RESTv2 } = require('../../index')
-const { args, debug } = require('./util/setup')
-const Manager = require('../lib/ws2_manager')
+process.env.DEBUG = process.env.DEBUG || 'bfx:examples:*'
 
 const { apiKey, apiSecret } = args
 

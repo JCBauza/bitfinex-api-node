@@ -1,8 +1,9 @@
-'use strict'
+import _bfxModels from 'bfx-api-node-models'
+import { RESTv2 } from '../../index.js'
+import { args, debug, readline } from '../util/setup.js'
 
-const { Order } = require('bfx-api-node-models')
-const { RESTv2 } = require('../../index')
-const { args: { apiKey, apiSecret }, debug, readline } = require('../util/setup')
+const { Order } = _bfxModels
+const { apiKey, apiSecret } = args
 
 const UPDATE_DELAY_MS = 5 * 1000
 const CANCEL_DELAY_MS = 10 * 1000

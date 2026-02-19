@@ -1,8 +1,7 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const debugTable = require('../../examples/util/debug_table')
+import assert from 'node:assert'
+import debugTable from '../../examples/util/debug_table.js'
 
 describe('debugTable', () => {
   it('throws an error if row, header, and column counts don\'t match', () => {

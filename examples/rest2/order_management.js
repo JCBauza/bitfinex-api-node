@@ -1,7 +1,5 @@
-'use strict'
-
-const { RESTv2 } = require('../../index')
-const { debug } = require('../util/setup')
+import { RESTv2 } from '../../index.js'
+import { debug } from '../util/setup.js'
 
 /**
  * Complete order management example

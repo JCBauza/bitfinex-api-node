@@ -1,6 +1,4 @@
-'use strict'
-
-const Table = require('cli-table3')
+import Table from 'cli-table3'
 
 /**
  * Generates a CLI table and logs it to the console
@@ -11,7 +9,7 @@ const Table = require('cli-table3')
  * @param {object} args.debug - log function
  * @returns {string} table
  */
-module.exports = ({ rows, headers, debug }) => {
+const debugTable = ({ rows, headers, debug }) => {
   const t = new Table({
     head: headers,
     colWidths: [] // auto-compute
@@ -23,3 +21,5 @@ module.exports = ({ rows, headers, debug }) => {
   str.split('\n').map(l => debug('%s', l))
   return str
 }
+
+export default debugTable

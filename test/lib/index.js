@@ -1,8 +1,8 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const BFX = require('../../index')
+import assert from 'node:assert'
+import BFX from '../../index.js'
+import * as util from '../../lib/util/index.js'
 
 describe('BFX', () => {
   describe('constructor', () => {
@@ -216,7 +216,7 @@ describe('BFX', () => {
 
   describe('util exports', () => {
     it('exports precision utilities from util/index', () => {
-      const util = require('../../lib/util')
+      // util is imported at the top of the file
       assert.ok(util.setSigFig)
       assert.ok(util.setPrecision)
       assert.ok(util.prepareAmount)

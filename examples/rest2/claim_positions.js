@@ -1,8 +1,8 @@
-'use strict'
+import { RESTv2 } from '../../index.js'
+import _isEmpty from 'lodash/isEmpty.js'
+import { args, debug, debugTable, readline } from '../util/setup.js'
 
-const { RESTv2 } = require('../../index')
-const _isEmpty = require('lodash/isEmpty')
-const { args: { apiKey, apiSecret }, debug, debugTable, readline } = require('../util/setup')
+const { apiKey, apiSecret } = args
 
 async function execute () {
   const rest = new RESTv2({

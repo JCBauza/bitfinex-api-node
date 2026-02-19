@@ -1,8 +1,7 @@
 /* eslint-env mocha */
-'use strict'
 
-const assert = require('assert')
-const WSv2 = require('../../lib/transports/ws2')
+import assert from 'node:assert'
+import WSv2 from '../../lib/transports/ws2.js'
 
 /**
  * WebSocket v2 Subscription Integration Tests
