@@ -132,7 +132,7 @@ chmod +x publish-dual.sh
 Una vez publicado, el paquete estará disponible en:
 
 - **npm público**: https://www.npmjs.com/package/@jcbit/bitfinex-api-node
-- **GitHub Packages**: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node
+- **GitHub Packages**: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node
 
 ---
 

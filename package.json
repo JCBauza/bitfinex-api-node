@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcbit/bitfinex-api-node.git"
+    "url": "git+https://github.com/jcbauza/bitfinex-api-node.git"
   },
   "keywords": [
     "bitfinex",
@@ -47,7 +47,7 @@
     "rest"
   ],
   "contributors": [
-    "JC <jcbit@users.noreply.github.com> (https://github.com/jcbit)",
+    "JC <jcbauza@users.noreply.github.com> (https://github.com/jcbauza)",
     "Ezequiel Wernicke <ezequiel.wernicke@bitfinex.com> (https://www.bitfinex.com)",
     "Josh Rossi <josh@bitfinex.com> (https://www.bitfinex.com)",
     "Cris Mihalache <cris.m@bitfinex.com> (https://www.bitfinex.com)",
@@ -58,9 +58,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcbit/bitfinex-api-node/issues"
+    "url": "https://github.com/jcbauza/bitfinex-api-node/issues"
   },
-  "homepage": "https://github.com/jcbit/bitfinex-api-node#readme",
+  "homepage": "https://github.com/jcbauza/bitfinex-api-node#readme",
   "devDependencies": {
     "bfx-api-mock-srv": "^2.0.0",
     "blessed": "^0.1.81",

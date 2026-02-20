@@ -37,5 +37,5 @@ echo "🔄 Pusheando cambios..."
 git push origin master --tags
 
 echo "✅ Publicación completada en ambos registries!"
-echo "📦 GitHub Packages: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node"
+echo "📦 GitHub Packages: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node"
 echo "🌐 npm público: https://www.npmjs.com/package/@jcbit/bitfinex-api-node"

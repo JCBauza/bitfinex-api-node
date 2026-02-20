@@ -1,16 +1,16 @@
 # @jcbit/bitfinex-api-node
 
-> **Modernized fork** of the official Bitfinex API Node.js library with updated dependencies, Node.js 20+ support, and enhanced development experience.
+> **Modernized fork** of the official Bitfinex API Node.js library with updated dependencies, Node.js 22+ support, and enhanced development experience.
 
-[![npm version](https://img.shields.io/github/v/release/jcbit/bitfinex-api-node)](https://github.com/jcbit/bitfinex-api-node/releases)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org/)
+[![npm version](https://img.shields.io/github/v/release/jcbauza/bitfinex-api-node)](https://github.com/jcbauza/bitfinex-api-node/releases)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D22.0.0-brightgreen)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 ## 🚀 What's New in v7.1.0
 
 ### ✨ **Modernization Features**
 
-- **Node.js 20+** minimum requirement
+- **Node.js 22+** minimum requirement
 - **All 47 dependencies updated** to latest versions
 - **Enhanced npm scripts** for better development experience
 - **Comprehensive .env configuration** system
@@ -45,13 +45,13 @@ npm install @jcbit/bitfinex-api-node
 
 ### Requirements
 
-- **Node.js**: ≥20.0.0
+- **Node.js**: ≥22.0.0
 - **npm**: ≥10.0.0
 
 ## 🔧 Quick Start
 
 ```javascript
-const { BFX } = require("@jcbit/bitfinex-api-node");
+import BFX from '@jcbit/bitfinex-api-node'
 
 // REST API
 const bfx = new BFX({
@@ -103,7 +103,7 @@ This is a **modernized fork** of the official `bitfinex-api-node` with:
 
 | Feature           | Original    | This Fork             |
 | ----------------- | ----------- | --------------------- |
-| **Node.js**       | ≥16.0.0     | ≥20.0.0               |
+| **Node.js**       | ≥16.0.0     | ≥22.0.0               |
 | **Dependencies**  | Outdated    | All updated (47 deps) |
 | **ws Library**    | v7 (broken) | v8+ (fixed)           |
 | **Configuration** | Manual      | .env + guide          |
@@ -181,7 +181,7 @@ This is a **personal fork** focused on modernization. For issues with the core A
 
 For modernization-specific issues or suggestions:
 
-1. Check existing [issues](https://github.com/jcbit/bitfinex-api-node/issues)
+1. Check existing [issues](https://github.com/jcbauza/bitfinex-api-node/issues)
 2. Create a new issue with detailed description
 3. PRs welcome for bug fixes and improvements
 
@@ -192,7 +192,7 @@ MIT License - see [LICENSE.md](LICENSE.md)
 ## 🙏 Credits
 
 - **Original Library**: [Bitfinex Team](https://github.com/bitfinexcom/bitfinex-api-node)
-- **Modernization**: [JC](https://github.com/jcbit)
+- **Modernization**: [JC](https://github.com/jcbauza)
 - **All Contributors**: See package.json contributors list
 
 ---
@@ -202,6 +202,6 @@ MIT License - see [LICENSE.md](LICENSE.md)
 **🔗 Links**:
 
 - [Original Repository](https://github.com/bitfinexcom/bitfinex-api-node)
-- [This Fork](https://github.com/jcbit/bitfinex-api-node)
-- [Release Notes](https://github.com/jcbit/bitfinex-api-node/releases)
+- [This Fork](https://github.com/jcbauza/bitfinex-api-node)
+- [Release Notes](https://github.com/jcbauza/bitfinex-api-node/releases)
 - [Technical Review](TECHNICAL-REVIEW.md)

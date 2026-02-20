@@ -8,7 +8,7 @@ El paquete **@jcbit/bitfinex-api-node** está ahora disponible en:
 
 1. **🔒 GitHub Package Registry** (v7.1.0)
 
-   - URL: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node
+   - URL: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node
    - Requiere autenticación con GitHub
 
 2. **🌐 npm público** (v7.1.1)
@@ -85,7 +85,7 @@ git push --tags
 
 | Registry            | Versión | Estado       | URL                                                                                  |
 | ------------------- | ------- | ------------ | ------------------------------------------------------------------------------------ |
-| **GitHub Packages** | v7.1.0  | ✅ Publicado | [Ver paquete](https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node) |
+| **GitHub Packages** | v7.1.0  | ✅ Publicado | [Ver paquete](https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node) |
 | **npm público**     | v7.1.1  | ✅ Publicado | [Ver paquete](https://www.npmjs.com/package/@jcbit/bitfinex-api-node)                |
 
 ## 🔄 **Estrategia de Versionado**
@@ -116,9 +116,9 @@ Para mantener ambos registries sincronizados:
 ## 📚 **Enlaces Útiles**
 
 - **📦 npm público**: https://www.npmjs.com/package/@jcbit/bitfinex-api-node
-- **🔒 GitHub Packages**: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node
-- **🏠 Repositorio**: https://github.com/jcbit/bitfinex-api-node
-- **🚀 Releases**: https://github.com/jcbit/bitfinex-api-node/releases
+- **🔒 GitHub Packages**: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node
+- **🏠 Repositorio**: https://github.com/jcbauza/bitfinex-api-node
+- **🚀 Releases**: https://github.com/jcbauza/bitfinex-api-node/releases
 
 ## 🔧 **Configuración de Desarrollo**
 

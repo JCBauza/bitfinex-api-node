@@ -1,6 +1,6 @@
-# Bitfinex API Node - Fork by JCBit
+# Bitfinex API Node - Fork by JCBauza
 
-Este es un fork mantenido por JCBit del cliente oficial de Bitfinex API para Node.js.
+Este es un fork mantenido por JCBauza del cliente oficial de Bitfinex API para Node.js.
 
 ## 🚀 Desarrollo en Contenedor
 
@@ -15,7 +15,7 @@ Este proyecto está configurado para funcionar con DevContainers para un entorno
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/JCBit/bitfinex-api-node.git
+   git clone https://github.com/JCBauza/bitfinex-api-node.git
    cd bitfinex-api-node
    ```
 
@@ -86,4 +86,4 @@ Mantiene la misma licencia que el proyecto original.
 ---
 
 **Repositorio Original**: https://github.com/bitfinexcom/bitfinex-api-node
-**Fork Mantenido por**: JCBit
+**Fork Mantenido por**: JCBauza

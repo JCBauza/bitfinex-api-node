@@ -17,7 +17,7 @@ npm install @jcbit/bitfinex-api-node@7.2.0
 
 - **Name**: `@jcbit/bitfinex-api-node`
 - **Version**: `7.2.0`
-- **Published**: 43 seconds ago by jcbit
+- **Published**: 43 seconds ago by jcbauza
 - **Size**: 32.8 kB compressed, 132.8 kB unpacked
 - **Dependencies**: 12 dependencies
 - **Files**: 16 files included
@@ -141,7 +141,7 @@ npm update @jcbit/bitfinex-api-node
 ## 🌐 **Links & Resources**
 
 - **npm Package**: https://www.npmjs.com/package/@jcbit/bitfinex-api-node
-- **GitHub Repository**: https://github.com/jcbit/bitfinex-api-node
+- **GitHub Repository**: https://github.com/jcbauza/bitfinex-api-node
 - **Documentation**: Included in package
 - **Examples**: `examples/` directory in the package
 

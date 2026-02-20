@@ -10,7 +10,7 @@ The **@jcbit/bitfinex-api-node** package has been successfully published to GitH
 - **Version**: `7.1.0`
 - **Registry**: GitHub Package Registry
 - **Visibility**: Private (GitHub Packages default)
-- **Package URL**: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node
+- **Package URL**: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node
 
 ### 🔗 **Installation Instructions**
 
@@ -120,9 +120,9 @@ npm publish --access public
 
 ### 📚 **Documentation Links**
 
-- **Package**: https://github.com/users/jcbit/packages/npm/package/bitfinex-api-node
-- **Repository**: https://github.com/jcbit/bitfinex-api-node
-- **Release**: https://github.com/jcbit/bitfinex-api-node/releases/tag/v7.1.0
+- **Package**: https://github.com/users/jcbauza/packages/npm/package/bitfinex-api-node
+- **Repository**: https://github.com/jcbauza/bitfinex-api-node
+- **Release**: https://github.com/jcbauza/bitfinex-api-node/releases/tag/v7.1.0
 - **Technical Review**: [TECHNICAL-REVIEW.md](./TECHNICAL-REVIEW.md)
 - **Setup Guide**: [ENV-SETUP.md](./ENV-SETUP.md)
 
@@ -137,6 +137,6 @@ npm publish --access public
 ---
 
 **Publication Date**: June 24, 2025  
-**Published by**: jcbit  
+**Published by**: jcbauza  
 **Package Type**: npm (GitHub Package Registry)  
 **Status**: ✅ Successfully Published

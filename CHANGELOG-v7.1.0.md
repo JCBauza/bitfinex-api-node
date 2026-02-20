@@ -80,4 +80,4 @@ See `IMPROVEMENT-PROPOSALS.md` for detailed roadmap including:
 
 ---
 
-**Full Changelog**: [v7.0.0...v7.1.0](https://github.com/JCBit/bitfinex-api-node/compare/v7.0.0...v7.1.0)
+**Full Changelog**: [v7.0.0...v7.1.0](https://github.com/JCBauza/bitfinex-api-node/compare/v7.0.0...v7.1.0)
